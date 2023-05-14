@@ -1,0 +1,27 @@
+{
+    "name": "DOM Finder",
+    "description": "Find DOM Elements.",
+    "version": "3.0",
+    "manifest_version": 3,
+    "permissions": ["tabs", "activeTab", "storage", "contextMenus"],
+    "icons": {
+        "16": "icons/favicon-32x32.png",
+        "32": "icons/favicon-32x32.png",
+        "48": "icons/favicon-32x32.png",
+        "128": "icons/favicon-32x32.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/favicon-32x32.png",
+            "32": "icons/favicon-32x32.png",
+            "48": "icons/favicon-32x32.png",
+            "128":"icons/favicon-32x32.png"
+        }
+    },
+    "content_scripts": [
+        {
+          "matches": [""], 
+          "js": ["script.js"]
+        }
+    ]
+}
